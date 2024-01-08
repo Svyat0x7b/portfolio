@@ -18,7 +18,6 @@ import {
     upwork,
     best,
     on2u,
-    shopify,
     pizza,
     threejs,
     euphoria

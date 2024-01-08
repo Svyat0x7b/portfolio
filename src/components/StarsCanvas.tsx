@@ -1,6 +1,6 @@
-import React, { useState, useRef, Suspense } from 'react';
+import React, { useRef, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Points, PointMaterial, Preload } from '@react-three/drei';
+import { Points, PointMaterial } from '@react-three/drei';
 //@ts-ignore
 import * as random from 'maath/random';
 import CanvasLoader from './Loader';
@@ -10,7 +10,7 @@ const Stars: React.FC = (props) => {
 
     const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
 
-    useFrame((state, delta) => {
+    useFrame((_state, delta) => {
         //@ts-ignore
         ref.current.rotation.x -= delta / 10;
         //@ts-ignore
@@ -19,7 +19,12 @@ const Stars: React.FC = (props) => {
 
     return (
         <group rotation={[0, 0, Math.PI / 4]}>
-            <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
+            <Points
+                ref={ref}
+                positions={sphere as Float32Array}
+                stride={3}
+                frustumCulled
+                {...props}>
                 <PointMaterial
                     transparent
                     color="#f272c8"
