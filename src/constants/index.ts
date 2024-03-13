@@ -21,6 +21,7 @@ import {
     pizza,
     threejs,
     euphoria,
+    anongram,
     //@ts-ignore
 } from '../assets';
 
@@ -283,6 +284,35 @@ const projects: IProject[] = [
         image: pizza,
         source_code_link: 'https://github.com/Svyat0x7b/react-pizza',
         site_link: 'react-pizza-omega-two.vercel.app',
+    },
+    {
+        name: 'Anongram - webchat',
+        description: 'Fullstack web application that provides message exchange between users!',
+        tags: [
+            {
+                name: 'react',
+                color: 'text-[#008ef0]',
+            },
+            {
+                name: 'typescript',
+                color: 'text-[#0062ac]',
+            },
+            {
+                name: 'tailwind',
+                color: 'text-[#68ceff]',
+            },
+            {
+                name: 'expressjs',
+                color: 'text-[#6aa84f] ',
+            },
+            {
+                name: 'websoket',
+                color: 'text-[#B2E8E8]',
+            },
+        ],
+        image: anongram,
+        source_code_link: 'https://github.com/Svyat0x7b/web-chat-anon',
+        site_link: '#',
     },
 ];
 

@@ -28,6 +28,7 @@ import best from './company/best.png';
 import pizza from './pizza.png';
 import on2u from './on2u.png';
 import euphoria from './euphoria.png';
+import anongram from './anongram.png';
 
 export {
     on2u,
@@ -57,4 +58,5 @@ export {
     upwork,
     best,
     euphoria,
+    anongram,
 };
