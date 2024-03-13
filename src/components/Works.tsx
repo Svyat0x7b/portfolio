@@ -34,7 +34,11 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, key }) => {
                     </div>
                 </div>
                 <div className="mt-5">
-                    <h3 className="text-white font-bold text-[24px]">{project.name}</h3>
+                    <a href={project.site_link}>
+                        <h3 className="text-white font-bold text-[24px] hover:underline">
+                            {project.name}
+                        </h3>
+                    </a>
                     <p className="mt-2 text-secondary text-[14px]">{project.description}</p>
                 </div>
                 <div className="mt-4 flex flex-wrap  gap-2">
